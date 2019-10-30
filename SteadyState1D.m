@@ -8,7 +8,7 @@ Inxnorm=ceil(M/2);
 M=29;n=-floor(M/2):floor(M/2);
 Vk=Vk(1,Inxnorm-floor(M/2):Inxnorm+floor(M/2));
 % ---- Solves for coefficients ---- 
-[Ak,Jk,Dk]=matrix1D(Vk,n,kBTx,gx,fx,L);
+[Ak,Jk,Dk]=findMatrix1D(Vk,n,kBTx,gx,fx,L);
 [Pk,J0,vxk]=solver1D(Jk,Dk,M);
 % [Pk,Jxkk,vxk,Norm]=null_solver1D(Ak,Dk+Jk,M,L); %--uncomment to use instead of solver1D
 
