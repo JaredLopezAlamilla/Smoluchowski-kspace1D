@@ -1,3 +1,7 @@
+%-------------------------------------------------------------------------
+%    This code computes the steady-state distribution in position space
+%               and calculates its k-space form 
+%-------------------------------------------------------------------------
 M=101; MM=101; L=1; xgrid=deal(L*(0:M-1)/M); 
 Vx=3;Vy=0;Vxy=0; kBTx=1; gx=1; fx=4;
 % ---- Creates potential ----
